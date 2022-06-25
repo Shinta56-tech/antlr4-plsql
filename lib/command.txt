@@ -1,0 +1,5 @@
+*グラマーをコンパイル @ .g4ファイルのディレクトリ
+..\..\lib\antlr4.bat -o ..\..\src\parser -no-listener PlSqlParser.g4 PlSqlLexer.g4
+
+*テキストの解析ツリーを表示 @ bin
+..\lib\grun.bat parser.PlSql sql_script ..\resource\plsql\select_into.sql -gui
